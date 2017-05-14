@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Test Index</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="dist/css/skins/skin-red.css">
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <style type="text/css">
+        .highcharts-button {
+            display: none;
+        }
+    </style>
+
+
+    <script type="text/javascript" src="plugins/jquery.slimscroll.js"></script>
+    <link rel="stylesheet" href="css/scroll.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#scroll-area').niceScroll({
+                autohidemode: 'false',     // Do not hide scrollbar when mouse out
+                cursorborderradius: '0px', // Scroll cursor radius
+                background: '#E5E9E7',     // The scrollbar rail color
+                cursorwidth: '10px',       // Scroll cursor width
+                cursorcolor: '#999999'     // Scroll cursor color
+            });
+        });
+    </script>
+    <style type="text/css">
+
+        #scroll-area {
+            width: 1070px;
+            height: 200px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#scroll-area1').niceScroll({
+              //  autohidemode: 'false',     // Do not hide scrollbar when mouse out
+                cursorborderradius: '0px', // Scroll cursor radius
+                background: '#E5E9E7',     // The scrollbar rail color
+                cursorwidth: '10px',       // Scroll cursor width
+                cursorcolor: '#999999'     // Scroll cursor color
+            });
+        });
+    </script>
+    <style type="text/css">
+        #scroll-area1 {
+            width: 1070px;
+            height: 200px;
+        }
+    </style>
+
+    <style type="text/css">
+        .b{height: 400px; overflow: hidden; width: 330px; margin-left:auto; margin-right: auto;}
+        .b-new div{width: 300px; height: auto; line-height: 2.4; font-size: 30px; }
+    </style>
+
+</head>
+
+<body class="hold-transition  skin-red sidebar-mini">
+<div class="wrapper">
+
+<header class="main-header" >
+
+     <a href="index.html" class="logo">
+         <span class="logo"><b>Finnalyst</b></span>
+     </a>
+
+        <nav class="navbar navbar-static-top">
+
+            <div class="navbar-custom-menu">
+
+                <ul class="nav navbar-nav ">
+
+                    <li class="dropdown messages-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o " ></i>
+                            <span class="label label-success">4</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 4 messages</li>
+                            <li>
+
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                            </div>
+                                            <h4>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown notifications-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">10</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 10 notifications</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user text-red"></i> You changed your username
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">View all</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown messages-menu">
+                        <a href="Logout.html" class="dropdown-toggle" data-toggle="dropdown">
+                            <button type="button" onclick="logout();" class="btn-danger " data-widget="collapse">Logout</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </nav>
+    </header>
+    <aside class="main-sidebar">
+        <section class="sidebar">
+
+            <ul class="sidebar-menu">
+
+                <li class="header"></li>
+
+                <li class="active treeview">
+                    <a href="index.html">
+                        <span ><i class="fa fa-home fa-3x"></i> &nbsp;&nbsp; Dashboard</span>
+                    </a>
+                </li>
+
+                <li class=" treeview">
+                    <a href="watchlist.html">
+                        <span ><i class="fa fa-tags fa-3x"></i> &nbsp;&nbsp; WatchList</span>
+                    </a>
+                </li>
+
+
+                <li class=" treeview">
+                    <a href="company.html">
+                        <span ><i class="fa fa-building-o fa-3x"></i> &nbsp;&nbsp; Company</span>
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+    </aside>
+
+    <div class="content-wrapper">
+
+        <section class="content">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box box-danger box-solid" >
+                        <div class="box-header with-border">
+                            <h3 class="box-title"> <i class="fa fa-list-alt"></i> Latest from the Market </h3>
+
+                            <div class="box-tools pull-right">
+
+                                <button type="button" class="btn-danger btn-info btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 3px; margin-right: 40px;">
+                                    Select Index <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu  scrollable-menu" role="menu">
+                                    <li><a href="#"onclick="ChangeIndexDashboardCache('in_26','sc_55bdc00bbccb951f74000017','AEX', '');return;">AEX</a></li>
+                                    <li><a href="#"onclick="ChangeIndexDashboardCache('in_15','sc_55bdc00abccb951f7400000c','APEX50', '');return;">APEX50</a></li>
+                                </ul>
+s
+                                <button type="button" class="btn-danger" data-widget="remove"><i class="fa fa-times"></i></button>
+                                <button type="button" class="btn-danger " data-widget="collapse"><i class="fa fa-minus"></i></button>
+
+                            </div>
+                        </div>
+
+                        <div class="box-body">
+                            <div id="container"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="col-md-4">-->
+                    <!--<div class="box box-danger box-solid">-->
+                        <!--<div class="box-header with-border">-->
+                            <!--<h3 class="box-title"> <i class="fa fa-list-alt"></i> Stock Market</h3>-->
+                            <!--<div class="box-tools pull-right">-->
+                                <!--<button type="button" class="btn-danger tog" data-widget="expand"><i class="fa fa-expand"></i></button>-->
+                                <!--<button type="button" class="btn-danger " data-widget="collapse"><i class="fa fa-minus"></i></button>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="box-body">-->
+                            <!--<div class="b">-->
+                                <!--<div class="b-new">-->
+
+                                    <!--<table  class="table table-bordered table-hover table-striped">-->
+
+                                        <!--<tbody id="stock-list">-->
+                                        <!--</tbody>-->
+                                        <!--<tr><td colspan="2">Symbol Name</td></tr>-->
+                                        <!--<tr><td colspan="2">dummy</td></tr>-->
+                                        <!--<tr><td>open</td>-->
+                                            <!--<td>closes</td></tr>-->
+                                        <!--<tr><td>High:</td>-->
+                                            <!--<td>Low:</td></tr>-->
+                                    <!--</table>-->
+
+                                <!--</div>-->
+
+
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+
+        <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="box box-danger box-solid">
+                        <div class="box-header with-border">
+                            <h3 class="box-title"> <i class="fa fa-list-alt"></i> Twitter Feed</h3>
+
+                            <div class="box-tools pull-right">
+
+                                <button type="button" class="btn-danger tog" data-widget="expand"><i class="fa fa-expand"></i></button>
+                                <button type="button" class="btn-danger " data-widget="collapse"><i class="fa fa-minus"></i></button>
+
+                            </div>
+                        </div>
+
+                        <div class="box-body">
+                            <div id="scroll-area1">
+                                <table  class="table table-bordered table-hover table-striped">
+                                    <tbody id="tweet-list">
+                                    <div id="tweet">
+                                    </div>
+                                    <br/>
+
+                                    <div id="tweet-id">
+                                    </div>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="box box-danger box-solid">
+                    <div class="box-header with-border">
+                        <h3 class="box-title"> <i class="fa fa-list-alt"></i> Latest Article</h3>
+
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn-danger" data-widget="expand"><i class="fa fa-expand"></i></button>
+
+                            <button type="button" class="btn-danger " data-widget="collapse"><i class="fa fa-minus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="box-body">
+
+                        <div id="scroll-area">
+                            <table  class="table table-bordered table-hover table-striped">
+                                <tbody id="news-list" style="{height: 100px; overflow-y: auto; position: absolute;}">
+                                <div id="title">
+                                </div>
+                                <br/>
+
+                                <div id="source">
+                                </div>
+                                <br/>
+
+                                <div id="content">
+                                </div>
+                                <br/>
+
+                                <div id="link">
+                                </div>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </section>
+</div>
+</div>
+
+<script>
+
+    var wstweet = new WebSocket("ws://54.153.126.234:8888/tweetws");
+    var $message = $('#message');
+
+    wstweet.onmessage = function(ev) {
+//        console.log(ev.data)
+        // alert("Message is received...");
+        var msg = JSON.stringify(ev.data);
+        response = JSON.parse(msg);
+        var $tr = $('<tr>').append(
+            $('<td>').innerHTML = ev.data
+        ).appendTo('#tweet-list');
+
+    }
+    function getStockData() {
+        $.ajax({
+            type: 'GET',
+            url: 'http://54.153.126.234:8888/getHistoricalData?symbol=AAPL&days=1&interval=300',
+            dataType: "json",
+            async: false,
+            success: function (data) {
+                console.log(data);
+                data = JSON.stringify(data);
+                response = JSON.parse(data);
+//                console.log(val);
+                for (var key in response) {
+                    if (response.hasOwnProperty(key)) {
+                        var val = response[key];
+                        for (var i in val) {
+                            if (val.hasOwnProperty(i)) { var val = response[key];
+                                for (var i in val) {
+                                    if (val.hasOwnProperty(i)) {
+                                        var item = val[i]
+                                        if(typeof item === 'object') {
+                                            console.log(item);
+                                            var str = item.volume1 + item.open + item.close + item.low + item.symbolname + item.time
+                                            var $tr = $('<tr>').append(
+                                                $('<td>').text(str)
+                                            ).appendTo('#stock-list');
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    function getNews() {
+        //54.153.126.234
+        $.ajax({
+            type: 'POST',
+            url: 'http://54.153.126.234:8888/getLatestNews?query="Google Stock Price"',
+            dataType: "json",
+            async: false,
+            //        data: {
+            //            Country: "Japan"
+            //        },
+            success: function (data) {
+                data = JSON.stringify(data);
+                response = JSON.parse(data);
+//                console.log(val);
+                for (var key in response) {
+                    if (response.hasOwnProperty(key)) {
+                        var val = response[key];
+                        for (var i in val) {
+                            if (val.hasOwnProperty(i)) {
+                                var item = val[i]
+                                if(typeof item === 'object') {
+                                    console.log(item);
+                                    var str = item.title + "<br/>" + item.source + "<a href=\"" + item.link + "\">" + item.link + "</a>"
+                                    var $tr = $('<tr>').append(
+                                        $('<td>').innerHTML = str
+                                    ).appendTo('#news-list');
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    $(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'line'
+            },
+            title: {
+                text: '100% height chart - resize me!'
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            series: [{
+                data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+            },{
+                data: [12.9, 17.5, 50.4, 75.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+            },{
+                data: [39.9, 41.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+            }]
+        });
+    });
+
+    window.onload = getStockData();
+    window.onload = getNews();
+
+</script>
+
+
+
+<script type="text/javascript">
+    $(function(){
+
+        $('#testDiv').slimScroll();
+    });
+</script>
+
+<script>
+    var seriesOptions = [],
+        seriesCounter = 0,
+        names = ['GOOG'];
+
+    function createChart() {
+        Highcharts.stockChart('container', {
+            rangeSelector: {
+                selected: 4,
+                inputEnabled: false,
+                buttonTheme: {
+                    visibility: 'hidden'
+                },
+                labelStyle: {
+                    visibility: 'hidden'
+                }
+            },
+            yAxis: {
+                labels:{
+                    enabled: false
+                },
+//                labels: {
+//                    formatter: function () {
+//                        return (this.value > 0 ? ' + ' : '') + this.value + '%';
+//                    }
+//                },
+                plotLines: [{
+                    value: 0,
+                    width: 2,
+                    color: 'silver'
+                }]
+            },
+            credits: {
+                enabled: false
+            },
+            plotOptions: {
+                series: {
+                    compare: 'percent',
+                    showInNavigator: true
+                }
+            },
+            tooltip: {
+                pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.change}%)<br/>',
+                valueDecimals: 2,
+                split: true
+            },
+
+            series: seriesOptions
+        });
+    }
+
+    $.each(names, function (i, name) {
+        $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=' + name.toLowerCase() + '-c.json&callback=?', function (data) {
+
+            seriesOptions[i] = {
+                name: name,
+                data: data
+            };
+
+            seriesCounter += 1;
+            if (seriesCounter === names.length) {
+                createChart();
+            }
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    jQuery.fn.extend({
+        marqueeTop:function (options){
+            var defaults = {container:"ul",inner:"li",placeholder:0}
+            var opts = $.extend({}, defaults,options);
+            $(this).each(function(){
+                var obj = $(this);
+                var ul = obj.find(opts.container);
+                var li = ul.find(opts.inner);
+                var placeholder = opts.placeholder == 0 ? li.outerHeight() : opts.placeholder;
+                var w = (li.size() +1) * li.outerHeight();
+                ul.css('height',w);
+                function autoScroll(){
+                    ul.animate({marginTop:'-'+placeholder},1000,function(){
+                        ul.css({marginTop:0}).find(opts.inner+':first').appendTo(ul);
+                    });
+                }
+                var scrolling = setInterval(autoScroll,2000);
+                obj.hover(function(){
+                    clearInterval(scrolling);
+                },function(){
+                    scrolling = setInterval(autoScroll,2000);
+                });
+
+            });
+        }
+    });
+    $(function(){
+        $(".b").marqueeTop({container:".b-new",inner:"div",placeholder:'200px'});
+    });
+</script>
+
+</body>
+</html>
